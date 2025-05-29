@@ -64,62 +64,68 @@ card-game-api/
    ```bash
    git clone https://github.com/votre-utilisateur/card-game-api.git
    cd card-game-api
-Installer les dépendances
-
-composer install
-Démarrer le serveur Symfony
-
-symfony server:start
-
-Accéder à l’API
-GET http://localhost:8000/api/cards/generate
-
-🧪 Lancer les tests
-php bin/phpunit
-
+2. **Installer les dépendances**
+   ```bash
+    composer install
+   ```
+3. **Démarrer le serveur Symfony**
+    ```bash
+    symfony server:start
+   ```
+4. **Accéder à l’API**
+   ```bash
+    GET http://localhost:8000/api/cards/generate
+    ```
+5. **🧪 Lancer les tests**
+   ```bash
+   php bin/phpunit
+   ```
 📚 Exemple de réponse JSON
+   ```json
+      {
+      "unsorted": [
+      { "color": "Pique",    "value": "Roi" },
+      { "color": "Carreaux", "value": "AS" },
+      ...
+      ],
+      "sorted": [
+      { "color": "Carreaux", "value": "AS" },
+      { "color": "Carreaux", "value": "2" },
+      ...
+      ]
+      }
+   ```
+---
+# Bonnes pratiques respectées
+- Respect des principes SOLID
 
-{
-"unsorted": [
-{ "color": "Pique",    "value": "Roi" },
-{ "color": "Carreaux", "value": "AS" },
-...
-],
-"sorted": [
-{ "color": "Carreaux", "value": "AS" },
-{ "color": "Carreaux", "value": "2" },
-...
-]
-}
-✅ Bonnes pratiques respectées
-Respect des principes SOLID
+- Typage fort et logique encodée dans les Enums
 
-Typage fort et logique encodée dans les Enums
+- Séparation des responsabilités
 
-Séparation des responsabilités
-
-Tests unitaires couvrant cas normaux et limites
-
-Documentation claire (ce README)
-
-🚧 Améliorations futures
-
-Ajouter des tests d’intégration ou end-to-end (ex. Cypress)
-
-Mettre en place une gestion des utilisateurs et authentification
-
-Développer une interface web responsive et accessible
-
-Optimiser les performances pour gérer des mains de cartes plus volumineuses
-
-Ajouter la persistance des mains via Doctrine (optionnel)
-
-Intégration d’une CI/CD (GitHub Actions, GitLab CI…)
-
-📄 Licence
+- Tests unitaires couvrant cas normaux et limites
 
 
+# 🚧 Améliorations futures
+
+- Ajouter des tests d’intégration ou end-to-end (ex. Cypress)
+
+- Mise en place une gestion des utilisateurs et authentification
+
+- Ajouter la persistance des mains via Doctrine (optionnel)
+
+## Contact
+
+Développé par Kadri Yassine  
+GitHub : https://github.com/kadriyassine  
+Email : yesine.kadri@gmail.com
+
+---
 Lien Demo: https://www.loom.com/share/d977b115b31546f2b5f3f4dc62203ebf?sid=3f4535c6-dc62-42e2-9952-8196ae3ea386
+---
+Merci d’utiliser ce projet !  
+N’hésite pas à contribuer ou à poser des questions.
+
 
 
 
