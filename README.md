@@ -24,7 +24,7 @@ Ce projet Symfony propose une API RESTful permettant de générer une main aléa
 ---
 
 ## 🏗 Architecture du projet
-
+```
 card-game-api/
 │
 ├── src/
@@ -49,7 +49,7 @@ card-game-api/
 ├── public/ # Front controller (index.php)
 ├── composer.json # Dépendances PHP
 └── README.md # Documentation du projet
-
+```
 
 - **SOLID** : chaque classe a une responsabilité unique.
 - **DI (Dependency Injection)** : Symfony injecte `CardGameService` dans le contrôleur.
